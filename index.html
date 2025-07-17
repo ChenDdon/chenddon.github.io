@@ -402,19 +402,53 @@
   <tr>
     <td style="vertical-align: top; padding-right: 20px; white-space: nowrap;"><nobr>2025–2029</nobr></td>
     <td>
-<b>U.S. Department of Energy</b>, Microelectronics science research center projects for energy efficiency and extreme environments, $480,000 (Co-PI).</td>
+<b>U.S. Department of Energy</b>, Microelectronics science research center projects for energy efficiency and extreme environments, $480,000 (<b>Co-PI</b>).</td>
   </tr>
   <tr>
     <td style="vertical-align: top; padding-right: 20px; white-space: nowrap;"><nobr>2024–2026</nobr></td>
     <td>
-<b>American Mathematical Society</b>, AMS Simons Travel Grant, $5,000 (Recipient).</td>
+<b>American Mathematical Society</b>, AMS Simons Travel Grant, $5,000 (<b>Recipient</b>).</td>
   </tr>
   <tr>
     <td style="vertical-align: top; padding-right: 20px; white-space: nowrap;"><nobr>2023–2024</nobr></td>
     <td>
-<b>Bristol Myers Squibb</b>, Quantitative systems pharmacological modeling of drug impact to heart failure, $100,000 (Co-PI).</td>
+<b>Bristol Myers Squibb</b>, Quantitative systems pharmacological modeling of drug impact to heart failure, $100,000 (<b>Co-PI</b>).</td>
   </tr>
 </table>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find all images
+    const images = document.querySelectorAll("img");
+
+    // Assign ID to the profile image by matching part of the src
+    images.forEach(function (img) {
+      if (img.src.includes("cd_portrait")) {
+        img.id = "profile-img"; // Add an ID to the profile image
+
+        // Store the two image paths
+        const img1 = "/assets/img/cd_portrait.jpg";
+        const img2 = "/assets/img/cd_portrait2.jpg";
+
+        // Initial state
+        let showingImg1 = img.src.includes("cd_portrait");
+
+        // Function to toggle image
+        const toggleImage = function () {
+          img.src = showingImg1 ? img2 : img1;
+          showingImg1 = !showingImg1;
+        };
+
+        // Change on hover
+        img.addEventListener("mouseenter", toggleImage);
+
+        // Or change on click
+        img.addEventListener("click", toggleImage);
+      }
+    });
+  });
+</script>
+
 
     </div>
 
@@ -430,6 +464,16 @@
       <table class="table table-sm table-borderless">
         
         
+        
+          <tr>
+            <th scope="row" style="width: 12%">Jul 28, 2025</th>
+            <td>
+              
+                Poster at the <a href="https://icerm.brown.edu/program/topical_workshop/tw-25-fcdc" rel="external nofollow noopener" target="_blank">ICERM: Fostering Cross-Disciplinary Collaboration in Biology, Medicine, and Computational Science</a>, Brown University
+
+              
+            </td>
+          </tr>
         
           <tr>
             <th scope="row" style="width: 12%">Jun 25, 2025</th>
@@ -461,16 +505,6 @@
             </td>
           </tr>
         
-          <tr>
-            <th scope="row" style="width: 12%">Feb 24, 2025</th>
-            <td>
-              
-                Publication of “Category-Specific Topological Learning of Metal-Organic Frameworks” in the <em>Journal of Materials Chemistry A</em>
-
-              
-            </td>
-          </tr>
-        
       </table>
     </div>
   
@@ -485,6 +519,99 @@
     </h2>
     <div class="publications">
   <ol class="bibliography">
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">Nat. Mach. Intell.</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="chen2024multiscale" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Multiscale topology-enabled structure-to-sequence transformer for protein–ligand interaction predictions</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Dong
+            Chen</em>, Jian
+            Liu, and Guo-Wei
+            Wei
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Nature Machine Intelligence</em>,  2024
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+        <a href="https://doi.org/https://doi.org/10.1038/s42256-024-00855-1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
+      
+      
+      
+      
+        
+          <a href="https://www.nature.com/articles/s42256-024-00855-1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
 <li>
 <div class="row">
   
@@ -539,95 +666,14 @@
       
       
       
+        <a href="https://doi.org/https://doi.org/10.1038/s41467-021-23720-w" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
       
       
       
       
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-      
-    
-
-    
-
-    
-
-    
-
-    
-  </div>
-</div>
-</li>
-<li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-          <abbr class="badge rounded w-100">Nat. Mach. Intell.</abbr>
         
-      
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="chen2024multiscale" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Multiscale topology-enabled structure-to-sequence transformer for protein–ligand interaction predictions</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      <em>Dong
-            Chen</em>, Jian
-            Liu, and Guo-Wei
-            Wei
-      
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>Nature Machine Intelligence</em>,  2024
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-      
-      
-      
+          <a href="https://www.nature.com/articles/s41467-021-23720-w" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
       
       
       
@@ -718,8 +764,14 @@
       
       
       
+        <a href="https://doi.org/https://doi.org/10.1021/jacs.5c04828" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
       
       
+      
+      
+        
+          <a href="https://pubs.acs.org/doi/10.1021/jacs.5c04828" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
       
       
       
@@ -800,7 +852,7 @@
     
     
     <div class="periodical">
-      <em>Advanced Science (Accepted)</em>,  2024
+      <em>Advanced Science</em>,  2024
     </div>
     <div class="periodical">
       
@@ -811,8 +863,110 @@
       
       
       
+        <a href="https://doi.org/https://doi.org/10.1002/advs.202502756" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
       
       
+      
+      
+        
+          <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202502756?af=R" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">JPCL</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="chen2023path" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Path topology in molecular and materials sciences</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Dong
+            Chen</em>, Jian
+            Liu, Jie
+            Wu, Guo-Wei
+            Wei, Feng
+            Pan, and Shing-Tung
+            Yau
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>The Journal of Physical Chemistry Letters</em>,  2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+        <a href="https://doi.org/https://doi.org/10.1021/acs.jpclett.2c03706" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a>
+      
+      
+      
+      
+        
+          <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.2c03706" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+        
       
       
       
