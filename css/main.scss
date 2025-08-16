@@ -1,0 +1,44 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Dimensions
+$max-content-width: {{ site.max_width }};
+
+@import
+  "variables",
+  "themes",
+  "layout",
+  "base",
+  "distill",
+  "cv",
+  "tabs",
+  "typograms",
+  "font-awesome/fontawesome",
+  "font-awesome/brands",
+  "font-awesome/solid",
+  "font-awesome/regular",
+  "tabler-icons/tabler-icons.scss",
+  "tabler-icons/tabler-icons-filled.scss",
+  "tabler-icons/tabler-icons-outline.scss"
+;
+
+// This targets 'em' tags within the 'author' div of selected papers or general publications lists
+.selected-papers .author em,
+.publications .author em { // Add .publications .author em if you have a general publications page too
+  color: var(--global-theme-color);  // Set the color to your theme's global theme color
+  // font-weight: bold;                 // Make the text bold
+  font-style: normal;                // Remove the default italic style from <em> (optional, if you don't want italics)
+  // If you wanted to explicitly remove the underline, you would add:
+  // text-decoration: none;
+  // If you wanted to explicitly ensure it's underlined (if it wasn't for some reason):
+  // text-decoration: underline;
+}
+
+.news .table tbody tr th,
+.news .table tbody tr td {
+  padding-top: 0rem;    // Increase for more space above the content in each row
+  padding-bottom: 0rem; // Increase for more space below the content in each row
+                           // Adjust these values as needed.
+}
